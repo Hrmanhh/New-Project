@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng kí</title>
+    <link rel="stylesheet" href="register.css">
+    <script src="register.js"></script>
+</head>
+<body>
+    <div class="register-form">
+        <h2>Đăng kí</h2>
+        <a href="login.html" id="login"></a>
+        <div class="formmm">
+            <div class="input-row">
+                <input id="tdn" type="text" required>
+                <span></span>
+                <label>Tên đăng nhập</label>
+            </div>                
+            <div class="input-row">
+                <input id="mk" type="password" required>
+                <span></span> 
+                <label>Mật Khẩu</label>
+            </div>
+            <div class="input-row">
+                <input id="rmk" type="password" required>
+                <span></span>
+                <label>Nhập lại mật khẩu</label>            
+            </div>            
+            <div class="input-row">
+                <input id="sdt" type="number" required>
+                <span></span>
+                <label>Số điện thoại</label>
+            </div>
+            <div>
+                <button onclick="check()">Đăng kí</button>
+            </div>
+            <div class="dangki">
+                Đã có tài khoản? <a href="login.html">Đăng nhập ngay!</a>
+            </div>
+        </form>
+    </div>     
+     
+</body>
+</html>

@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+    overflow: auto;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+div{
+    display: block;
+}
+
+
+/* Trang chủ */
+.background-image{
+    background-image: url('z2072726798171_60e69a43b6bde55e21639ff377bdd490.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #0e0e0e;
+    color: #ffffff;
+}
+.ten{
+    font-size: 1.5rem;
+    margin: 1rem 2rem;
+    font-weight: bold;
+    color: #ff9d2d;
+}
+.navbar-links {
+    transition: all 0.5s ease-out;
+}
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar-links li{
+    list-style: none;
+}
+.navbar-links li a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1rem;
+    display: block;
+    border: .5px solid none;
+}
+.navbar-links li a:hover{
+    background-color:#ffffff;
+    color: #0e0e0e;
+    transition: 0.5s;
+    border: .5px solid none;
+    border-radius: 25px;
+}
+#dn:hover{
+    background-color: #ffc88a;
+}
+.menu-button{
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.menu-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.chucmung p{
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%, -80%);
+    font-weight: bold;
+    font-size: 8.5vw;
+    color: #ff9d2d;
+}
+#dn{
+    text-decoration: none;
+    background-color: #ff9d2d;
+    font-weight: bold;
+    border: .5px solid none;
+    border-radius: 25px;
+}
+
+
+/* Thông tin */
+.info{
+    min-height: 30vh;
+    background-color: #fff6d9 ;
+}
+.info #main{
+    text-align: center;
+    padding: 0;
+    font-size: 50px;
+    font-weight: bold;
+}
+.info p{
+    margin: 5% 15%;
+    text-align: justify;
+    font-size: 25px;
+}
+
+
+/* Hình ảnh */
+.pictures{
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+.pictures h1{
+    text-align: center;
+    padding: 30px 0;
+    margin: 0 15%;
+}
+.container-1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.container-2{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.hinh-anh img{
+    width: 500px;
+    height: 300px;
+    margin-top: 50px;
+}
+.container-1 img:hover{
+    box-shadow: 0 0 40px #888888;
+    transition: .5s;
+}
+.hinh-anh p{
+    text-align: center;
+    padding: 0 15%;
+}
+
+
+
+
+
+/* Hỗ trợ */
+.support{
+    background-color: #0e0e0e;
+    height: 200px;
+    color: #ffffff;
+}
+#contact{
+    color:#ffffff;
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+}
+.lienhe{
+    text-align: center;
+}
+.lienhe p{
+    padding-left: 10px;
+    display: inline;
+}
+.owner{
+    opacity: 70%;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .menu-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+    .navbar-links li a{
+        padding: .75rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+}    
+@media (max-width: 550px){
+    .chucmung{
+        font-size: 30px;
+    }
+    .info{
+        min-height: 100vw;
+    }
+    .info p{
+        font-size: 4.5vw;
+    }
+    .info #main{
+        margin: 15%;
+        font-size: 8vw;
+    }
+    .container-1 img{
+        padding: 5%;
+        width: 100%;
+        height: 60vw;
+    }
+    .container-2 img{
+        padding: 5%;
+        width: 100%;
+        height: 60vw;
+    }
+}

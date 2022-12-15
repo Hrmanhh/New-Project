@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">    
+    <script src="login.js"></script>  
+</head>
+<body>
+    <div class="login-form">
+        <h2>Đăng nhập</h2>
+        <a href="Homework.html" id="main"></a>
+        <div name="myForm" class="formmm">
+            <div class="input-row">
+                <input id="tdn" type="text" required>
+                <span></span>
+                <label>Tên đăng nhập</label>
+            </div>                
+            <div class="error"><p id="noname"></p></div>
+            <div class="input-row">
+                <input id="mk" type="password" required>
+                <span></span> 
+                <label>Mật Khẩu</label>
+            </div>
+            <div class="error"><p id="nonumb"></p></div>
+            <div class="pass">Quên mật khẩu?</div>
+            <div class="nmk">Nhớ mật khẩu: <input type="checkbox"></div>
+            <div>
+                <button onclick="check()">Đăng nhập</button>
+            </div>
+            <div class="dangki">
+                Chưa phải là thành viên? <a href="register.html">Đăng kí ngay!</a>
+            </div>
+        </div>
+    </div>     
+</body>    
+</html
